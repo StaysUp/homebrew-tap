@@ -5,21 +5,21 @@
 class Agentbus < Formula
   desc "Cross-vendor middleware framework for coding agents"
   homepage "https://github.com/staysup/agentbus"
-  version "0.6.4"
+  version "0.6.5"
   license "FSL-1.1-ALv2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.4/agentbus_0.6.4_darwin_amd64.tar.gz"
-      sha256 "8fdfe9162628018b6b30963c3897d564476036cc5efb11ed2717cc1cc7682db1"
+      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.5/agentbus_0.6.5_darwin_amd64.tar.gz"
+      sha256 "e35f08f01590e74d086c7b359a554854996f2edbc28fbbf765a0c05a6bfc10e2"
 
       define_method(:install) do
         bin.install "agentbus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.4/agentbus_0.6.4_darwin_arm64.tar.gz"
-      sha256 "37810f25dc5ee99d804195835af0cd7920d5f1b2a615953e59e016b8a546aae3"
+      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.5/agentbus_0.6.5_darwin_arm64.tar.gz"
+      sha256 "9c79fcf2863e9c5d67e12ad9dae4ac7582b35c1d3fc64b468dc9725e25ced749"
 
       define_method(:install) do
         bin.install "agentbus"
@@ -29,15 +29,15 @@ class Agentbus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.4/agentbus_0.6.4_linux_amd64.tar.gz"
-      sha256 "11e3c0985383780828f314825f5cc2d188cba1b06c1900bd879bdd68571c0eaf"
+      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.5/agentbus_0.6.5_linux_amd64.tar.gz"
+      sha256 "78b685bcca6422cc5128244f560b3c596d5c6ff70ec9a0522a15e767cb0d358f"
       define_method(:install) do
         bin.install "agentbus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.4/agentbus_0.6.4_linux_arm64.tar.gz"
-      sha256 "d2c45f285d5e38ededd77058779cb8239fb9d8df884ea3391cac095f04c4869e"
+      url "https://github.com/StaysUp/agentbus/releases/download/v0.6.5/agentbus_0.6.5_linux_arm64.tar.gz"
+      sha256 "617c1e16da5fda205e5f53017a8eda4141dc43cbbc925769a1289a4051a8ef0b"
       define_method(:install) do
         bin.install "agentbus"
       end
